@@ -1,13 +1,7 @@
-    def test_split_empty_string_result_empty_array(self):
-        # arrange
-        stringToSplit = ""
-        regex = ""
-        expResult = []
-        result = None
-        cut = TagManipulator()
+    def parse_string(self, tags, regex):
+        result = []
 
-        # act
-        result = cut.parse_string(stringToSplit, regex)
+        if len(tags) < 1 :
+            return result
 
-        # assert
-        assert result == expResult
+        return result
