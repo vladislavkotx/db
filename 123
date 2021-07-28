@@ -1,10 +1,13 @@
-import string_calculator
-def test_correct_params_expect_OP_NUM_NUM():
-    # Arrange
-    cut = string_calculator.StringCalculator()
-    inputVal = "+, 3, 4"
-    expResult = ["OPERATOR", "NUMBER", "NUMBER"]
-    # Act
-    result = cut.parse(inputVal)
-    # Assert
-    assert result == expResult
+    def test_split_empty_string_result_empty_array(self):
+        # arrange
+        stringToSplit = ""
+        regex = ""
+        expResult = []
+        result = None
+        cut = TagManipulator()
+
+        # act
+        result = cut.parse_string(stringToSplit, regex)
+
+        # assert
+        assert result == expResult
